@@ -240,6 +240,15 @@ a{
 }
 
 .btn-flat-border {
+/* ここはコピーしなくてOK　*/
+.container {
+  font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* ここから下がボタンのCSS　*/
+.btn-animation-02 {
   display: inline-block;
   padding-left: 55px;
   padding-top: 10px;
