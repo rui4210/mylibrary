@@ -12,7 +12,7 @@
  現在URLはありません。
 
 ## テスト用アカウント
- 現在URLはありません。
+ 現在アカウントはありません。
 
 ## 利用方法
 1, 自身のアカウントを作成する為に、ユーザー登録をします。
@@ -63,7 +63,7 @@
 - belongs_to :user
 
 ## 実装した機能についてのGIFと説明
-
+ 現在GIFはありません。
 
 ## 実装予定の機能
 投稿機能を実装を検討しています。  
@@ -74,7 +74,7 @@
 <a href="https://gyazo.com/d2966e5fe014f23fdbcffb542d5d192a"><img src="https://i.gyazo.com/d2966e5fe014f23fdbcffb542d5d192a.png" alt="Image from Gyazo" width="892"/></a>
 
 ## ローカルでの動作方法
-　ターミナルにて、下記のコマンドを行ってください。  
+ターミナルにて、下記のコマンドを行ってください。  
 `% git clone https://github.com/rui4210/mylibrary.git`  
 
 ・開発環境  
