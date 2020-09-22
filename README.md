@@ -1,6 +1,6 @@
 # README
 
-<div align="center"><img src="https://lh3.googleusercontent.com/VlbjPQEhYKfdwJ4X_fNBXeIMQD35A1wYxIf1xurRSwTDUd671N1M00ZXIFEZSl7sSMEvjg=s113" width="300"/></div>
+<div align="center"><a href="https://gyazo.com/cacc1fc437bf920699a62561b8e2d6ee"><img src="https://i.gyazo.com/cacc1fc437bf920699a62561b8e2d6ee.png" alt="Image from Gyazo" width="378"/></a></div>
 
 # my library
 
