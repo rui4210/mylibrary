@@ -239,25 +239,53 @@ a{
   flex-direction: column;
 }
 
-.btn-flat-border {
+/* ここから下がボタンのCSS　*/
+.btn-animation-02 {
   display: inline-block;
-  padding-left: 55px;
-  padding-top: 10px;
-  width: 190px;
-  height: 50px;
+  width: 200px;
+  text-align: center;
+  background-color: #9ec34b;
+  border: 2px solid #9ec34b;
+  font-size: 16px;
+  color: #9ec34b;
   text-decoration: none;
-  color: white;
-  border: solid 2px white;
-  border-radius: 3px;
-  transition: .4s;
-  margin-top: 10px;
-  margin-left: 5px;
-  margin-bottom: 20px;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 4px;
+  position: relative;
 }
 
-.btn-flat-border:hover {
-  background: #67c5ff;
-  color: white;
+.btn-animation-02 span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-animation-02::before,
+.btn-animation-02::after {
+  content: "";
+  display: block;
+  background-color: #FFF;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: .2s;
+}
+.btn-animation-02::before {
+  left: 0;
+}
+.btn-animation-02::after {
+  right: 0;
+}
+
+.btn-animation-02:hover:before,
+.btn-animation-02:hover:after {
+  width: 0;
+  background-color: #FFF;
+}
+
+.btn-animation-02:hover {
+  color: #FFF;
 }
 
 /* mainのbookshelfのCSS */
