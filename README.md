@@ -49,9 +49,10 @@
 | Column            | Type      | Options     |
 | ----------------  | -------   | ----------- |
 | title             | string    | null: false |
-| genre             | integer   |             |
-| author            | integer   |             |
-| publishing        | integer   |             |
+| cover             | text      |             |
+| genre             | string    |             |
+| author            | string    |             |
+| publishing        | string    |             |
 | record_date       | integer   | null: false |
 | memo              | text      |             |
 | impression        | text      |             |
@@ -71,7 +72,7 @@
 登録した本をアプリ内で投稿をし、他のユーザーからコメントをもらえたり、また他の感想や要約を閲覧できて、新たに勉強や見聞を広げることができるようになります。  
 
 ## データベース設計
-<a href="https://gyazo.com/d2966e5fe014f23fdbcffb542d5d192a"><img src="https://i.gyazo.com/d2966e5fe014f23fdbcffb542d5d192a.png" alt="Image from Gyazo" width="892"/></a>
+<a href="https://gyazo.com/843ad48d61201c48b598db5c3f917abe"><img src="https://i.gyazo.com/843ad48d61201c48b598db5c3f917abe.png" alt="Image from Gyazo" width="889"/></a>
 
 ## ローカルでの動作方法
 ターミナルにて、下記のコマンドを行ってください。  
