@@ -1,6 +1,9 @@
 class Book < ApplicationRecord
   #アソシエーション
   belongs_to :user
+  has_one_attached :image
+  has_one_attached :cover
+  #belongs_to_active_hash :reading_situation
 
   #本情報
   #必須であること
@@ -13,5 +16,9 @@ class Book < ApplicationRecord
     validates :reading_situation
   end
 
-  
+  #「--」の時は保存できないようにする
+  with_options numericality: { other_than: 1 } do
+    #カテゴリーの選択
+    validates :reading_situation
+  end
 end
