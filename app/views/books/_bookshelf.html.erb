@@ -1,14 +1,32 @@
-<div class="bookshelf-header">
-  <div class="bookshelf-header-title">
-    <h1 class="bookshelf-header-name">b o o k s h e l f</h1>
-  </div>
-  <div class="bookshelf-header-form">
-    <div class="form-input">
-      <input class="form-message" placeholder= "キーワード入力(タイトル・著者・メモ...)">
-      <input class="form-submit" type="submit" value="検索">
+<div class="bookshelf-flame">
+  <div class="bookshelf-header">
+    <div class="container">
+      <%= link_to new_book_path do %>
+        <span class="btn-animation-02">本登録</span>
+      <% end %>
+    </div>
+    <div class="bookshelf-header-form">
+      <div class="form-input">
+        <input class="form-message" placeholder= "キーワード入力(タイトル・著者・メモ...)">
+        <input class="form-submit" type="submit" value="検索">
+      </div>
     </div>
   </div>
-</div>
 
-<div class="main-bookshelf">
+  <div class="main-bookshelf">
+    <div class="bookshelf-header-title">
+      <h1 class="bookshelf-header-name">b o o k s h e l f</h1>
+    </div>
+    <div class="bookshelf-header-genre">
+      <div class="container">
+        <span class="btn-animation-02">読んだ本</span>
+      </div>
+      <div class="container">
+        <span class="btn-animation-02">読みたい本</span>
+      </div>
+      <div class="container">
+        <span class="btn-animation-02">お気に入り</span>
+      </div>
+    </div>
+  </div>
 </div>

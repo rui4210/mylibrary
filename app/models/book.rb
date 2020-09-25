@@ -1,9 +1,11 @@
 class Book < ApplicationRecord
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to_active_hash :reading_situation
+  
   #アソシエーション
   belongs_to :user
   has_one_attached :image
   has_one_attached :cover
-  #belongs_to_active_hash :reading_situation
 
   #本情報
   #必須であること

@@ -1,36 +1,48 @@
-/* border-bottom: 1px solid #eee; */
-
 
 .books-registration-contents {
-  background-color: #f5f5f5;
-  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  background-color: #222222;
   font-size: 14px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-width: 500px;
+  width: 100%;
+  height: 100vh;
+  padding-top: 50px;
 }
 
 .books-registration-main {
-  background-color: #FFF;
-  width: 70vw;
-  min-width: 450px;
-  padding: 10vh 15vw;
+  background-color:#222222;
+  width: 100%;
+  padding: 5vh 15vw;
 }
 
 .books-registration-title {
   font-size: 22px;
   font-weight: bold;
   text-align: center;
+  color: white;
+  border-radius : 5%;
+  border-bottom: 2px solid white;
+  font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック";
 }
 
 /* 共通 */
 .indispensable {
   background: #ea352d;
   margin-left: 8px;
-  padding: 3px;
+  padding: 3px 6px;
   border-radius: 2px;
-  color: #fff;
+  color:white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.indispensable2 {
+  background: blueviolet;
+  margin-left: 8px;
+  padding: 3px 6px;
+  border-radius: 2px;
+  color:white;
   font-size: 12px;
   font-weight: bold;
 }
@@ -39,6 +51,9 @@
   font-weight: bold;
   min-width: 170px;
   margin-bottom: 10px;
+  color: white;
+  font-size: 16px;
+  font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック";
 }
 
 .select-box {
@@ -46,23 +61,6 @@
   width: 100%;
   background-color: #f5f5f5;
   padding-left: 20px;
-}
-
-.question {
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  background: #0099e8;
-  color: #FFF;
-  font-size: 13px;
-  text-align: center;
-  line-height: 20px;
-  text-decoration: none;
-  margin-left: 5px;
-}
-
-.question-text {
-  display: flex;
 }
 
 /* /共通 */
@@ -73,11 +71,12 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 2vh 0;
+  color:white
 }
 
 .click-upload {
-  margin: 15px 0;
   min-width: 250px;
+  font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック";
 }
 
 .click-upload>p {
@@ -93,11 +92,13 @@
 
 .books-text {
   width: 100%;
-  padding: 16px 16px 8px;
-  border-radius: 4px;
+  padding: 10px 10px 3px;
+  border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 16px;
   resize: none;
+  font-weight: bold;
+  font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック";
 }
 
 .books-explain {
@@ -114,35 +115,54 @@
 }
 
 .books-detail>.form {
-  width: 300px;
+  width: 200px;
   padding: 2vh 0;
 }
 
 .select-box {
-  margin: 2vh 0;
+  margin: 1vh 0 0 0;
 }
 
 /* 下部ボタン */
-.registration-btn-contents {
+.registration-btn-contents1 {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.registration-btn-contents2 {
+  margin-top: 0px;
   width: 100%;
   text-align: center;
 }
 
 .registration-btn {
-  background: #ea352d;
-  border: 1px solid #ea352d;
+  background: red;
+  border: 1px solid red;
   color: #fff;
-  width: 100%;
+  width: 50%;
   height: 50px;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 4vh;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック";
 }
 
 .back-btn {
   background: #aaa;
   border: 1px solid #aaa;
   color: #fff;
-  padding: 15px 35%;
+  padding: 15px 20%;
   text-decoration: none;
+  border-radius: 5px;
+  font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック";
+  font-size: 16px;
+  font-weight: bold;
 }
 
+textarea {
+  resize: vertical;
+  max-height: 500px;
+  min-height: 30px;
+}
