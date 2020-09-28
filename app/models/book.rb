@@ -15,12 +15,12 @@ class Book < ApplicationRecord
     #登録日
     validates :record_date
     #読書状況
-    validates :reading_situation
+    validates :reading_situation_id
   end
 
   #「--」の時は保存できないようにする
   with_options numericality: { other_than: 1 } do
     #カテゴリーの選択
-    validates :reading_situation
+    validates :reading_situation_id
   end
 end

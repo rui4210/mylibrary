@@ -3,17 +3,22 @@
 <div class="books-registration-contents">
   <div class="books-registration-main">
     <h2 class="books-registration-title">本の情報を入力</h2>
-    <%= form_with local: true do |f| %>
+    <%= form_with model: @book, local: true do |f| %>
       <%# 本の分類分け %>
+      <div class="new-books2">
+        <div class="weight-bold-text2">
+          登録日
+          <span class="indispensable">必須</span>
+        </div>
+      </div>
+      <%= f.text_field :record_date, class:"books-text", id:"book-record_date", placeholder:"登録日を記入", maxlength:"10" %>
       <div class="books-detail">
         <div class="weight-bold-text">
           本棚の選択
+          <span class="indispensable">必須</span>
         </div>
           <div class="form">
-          <div class="weight-bold-text">
-            <span class="indispensable">必須</span>
-          </div>
-          <%= f.collection_select(:reading_situation, ReadingSituation.all, :id, :name, {}, {class:"select-box", id:"book-reading-situation"}) %>
+          <%= f.collection_select(:reading_situation_id, ReadingSituation.all, :id, :name, {}, {class:"select-box", id:"book-reading-situation"}) %>
           </div>
       </div>
       <%# /本の分類分け %>
@@ -40,27 +45,27 @@
           タイトル
           <span class="indispensable">必須</span>
         </div>
-        <%= f.text_area :tilte, class:"books-text", id:"book-title", placeholder:"本のタイトル（必須 100文字まで)", maxlength:"100" %>
+        <%= f.text_field :tilte, class:"books-text", id:"book-title", placeholder:"本のタイトル（必須 100文字まで)", maxlength:"100" %>
         <div class="books-explain">
           <div class="weight-bold-text">
             ジャンル
             <span class="indispensable2">任意</span>
           </div>
-          <%= f.text_area :genre, class:"books-text", id:"book-genre", placeholder:"本のジャンル（任意 20文字まで）（小説、漫画、ビジネス書など）",maxlength:"20" %>
+          <%= f.text_field :genre, class:"books-text", id:"book-genre", placeholder:"本のジャンル（任意 20文字まで）（小説、漫画、ビジネス書など）",maxlength:"20" %>
         </div>
         <div class="books-explain">
           <div class="weight-bold-text">
             著者
             <span class="indispensable2">任意</span>
           </div>
-          <%= f.text_area :author, class:"books-text", id:"book-author", placeholder:"本の著者（任意 50文字まで）",maxlength:"50" %>
+          <%= f.text_field :author, class:"books-text", id:"book-author", placeholder:"本の著者（任意 50文字まで）",maxlength:"50" %>
         </div>
         <div class="books-explain">
           <div class="weight-bold-text">
             出版
             <span class="indispensable2">任意</span>
           </div>
-          <%= f.text_area :publishing, class:"books-text", id:"book-publishing", placeholder:"本の出版（任意 50文字まで）",maxlength:"50" %>
+          <%= f.text_field :publishing, class:"books-text", id:"book-publishing", placeholder:"本の出版（任意 50文字まで）",maxlength:"50" %>
         </div>
       </div>
       <%# /商品名と商品説明 %>

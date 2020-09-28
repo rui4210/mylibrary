@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 2020_09_23_060924) do
     t.integer "record_date", null: false
     t.text "memo"
     t.text "impression"
-    t.integer "reading_situation", null: false
+    t.integer "reading_situation_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
