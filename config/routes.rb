@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'books/index'
   root to: "books#index"
-  resources :books, only: [:index, :new]
+  resources :books, only: [:index, :new, :create]
 end
